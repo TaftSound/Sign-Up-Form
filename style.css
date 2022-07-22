@@ -1,0 +1,170 @@
+:root {
+    --color: rgb(115,77,51);
+    --accent-color: rgb(210,154,100);
+    --color-light: rgb(225,219,219);
+}
+
+@font-face {
+    font-family: 'norsebold';
+    src: url('./webfontkit-20220722-160022/norse-bold-webfont.woff2') format('woff2'),
+         url('./webfontkit-20220722-160022/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgb(44, 44, 44);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.contact-card {
+    display: flex;
+    min-height: 100vh;
+}
+
+.image-sidebar {
+    flex: 3;
+    display: flex;
+    position: relative;
+}
+@media screen and (max-width: 750px) {
+    .image-sidebar {
+        display: none;
+    }
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.logo-bar {
+    color: white;
+    position: absolute;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.logo-bar img {
+    height: 90px;
+    margin: 10px 5px;
+}
+
+h1 {
+    font-size: 65px;
+    font-family: 'norsebold';
+    margin: 0px;
+}
+
+.form-container {
+    flex: 5;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    padding: 0px 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-top {
+    flex: 1;
+    margin: 0px -40px;
+    padding: 0px 40px;
+    margin-top: 80px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+.form-bottom {
+    background-color: var(--color-light);
+    margin: 0px -40px;
+    padding: 40px;
+    padding-top: 20px;
+    flex: 1;
+}
+
+.form-label {
+    margin-top: 50px;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    width: 475px;
+    padding: 0;
+    padding-bottom: 15px;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 175px;
+}
+
+label {
+    font-size: .7rem;
+    margin-bottom: .2rem;
+    font-weight: 400;
+}
+
+input {
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    border-width: 1px;
+    padding: 5px 10px;
+}
+
+input:focus {
+    outline: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--accent-color);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    max-width: 43ch;
+    margin-bottom: 25px;
+}
+
+p, button {
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+button {
+    font-weight: bold;
+    background-color: var(--color);
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}

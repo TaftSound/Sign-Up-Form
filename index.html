@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="contact-card">
+        <div class="image-sidebar">
+            <img src="./images/pexels-alberta-studios-12701332.jpg" alt="Abstract architecture photograph">
+            <div class="logo-bar">
+                <img src="./images/odin-lined.png" alt="logo">
+                <h1>ODIN</h1>
+            </div>
+        </div>
+        <div class="form-container">
+            <form action="./index.html" method="post">
+                <div class="form-top">
+                    <h2>
+                        This is not a real online service! You know you need this in your life to help
+                         you realize your deepest dreams. Sign up <em>now</em> to get started.
+                    </h2>
+                    <h2>You <em>know</em> you want to.</h2>
+                    <h2 class="form-label">Let's do this!</h2>
+                    <ul>
+                        <li>
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="first-name" autocomplete="given-name">
+                        </li>
+                        <li>
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="last-name" autocomplete="family-name">
+                        </li>
+                        <li>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" autocomplete="email">
+                        </li>
+                        <li>
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="tel" id="phone-number" name="number" autocomplete="tel" pattern="^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$">
+                        </li>
+                        <li>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" autocomplete="current-password" pattern="^.*[A-Z]+.*[\d]+.*$|^.*[\d]+.*[A-Z]+.*$">
+                        </li>
+                        <li>
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm-password" name="confirm-password" autocomplete="current-password" pattern="^.*[A-Z]+.*[\d]+.*$|^.*[\d]+.*[A-Z]+.*$">
+                        </li>
+                    </ul>
+                </div>
+                <div class="form-bottom">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="login">Log In</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
